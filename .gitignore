@@ -17,3 +17,4 @@
 /config/initializers/02_storenvy-cool-kids.rb
 .DS_Store
 
+/.rvmrc
