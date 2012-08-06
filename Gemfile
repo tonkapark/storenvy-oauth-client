@@ -1,14 +1,13 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
+gem 'pg'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'awesome_print'
 gem 'devise'
-gem 'omniauth'
-gem 'omniauth-oauth2'
 gem 'omniauth-storenvy'
 gem 'haml-rails'
 
@@ -40,11 +39,9 @@ group :test do
 end
 
 group :development do
-  gem 'sqlite3'
   gem 'quiet_assets'
 end
 
 group :production do
-  gem 'pg'
   gem 'thin'
 end

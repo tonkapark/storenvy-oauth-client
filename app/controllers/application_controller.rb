@@ -2,8 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   def storenvy_oauth_client
-    Rails.logger.debug "\n\n #{STORENVY_OAUTH.inspect} \n\n"
-    @client ||= OAuth2::Client.new(STORENVY_OAUTH[:app_id], STORENVY_OAUTH[:secret], :site => 'https://api.storenvy.com')
+    @client ||= OAuth2::Client.new(ENV['STORENVY_APP_ID'], ENV['STORENVY_SECRET'], :site => 'https://api.storenvy.com')
   end
 
   def storenvy_access_token

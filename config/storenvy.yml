@@ -1,6 +1,0 @@
-development: &default
-  app_id: 8a463493a252d1ebf445fd7e3097fc905cd69ccd835078aca5571eb72e066e3a
-  secret: b6446a75585be6e30525723319e1729b32911abc41584379dd9f87263b1b2277
-  callback: http://storenvy-oauth-client.dev/users/auth/storenvy/callback
-
-production: *default

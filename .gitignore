@@ -21,3 +21,6 @@
 /.rvmrc
 # Ignore Powder/Pow config
 /.powenv
+
+#ignore database settings
+/config/database.yml
