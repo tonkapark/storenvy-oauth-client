@@ -17,4 +17,7 @@
 /config/initializers/02_storenvy-cool-kids.rb
 .DS_Store
 
+# Ignore local RVM
 /.rvmrc
+# Ignore Powder/Pow config
+/.powenv
