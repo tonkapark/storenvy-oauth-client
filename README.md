@@ -12,10 +12,17 @@ A starter application for building on the Storenvy OAuth API.
         # Callback URL (change the domain, if you're using something else)
         http://storenvy-oauth-client.com/users/auth/storenvy/callback
 
-3. Place your new credentials into `config/storenvy.yml`.
+3. Run in the console: `bundle install; rake db:reset`
 
-4. Run in the console: `bundle install; rake db:reset`
+4. Set [pow](http://pow.cx/) to point `storenvy-oauth-client.dev` to the app's project folder.
 
-5. Set [pow](http://pow.cx/) to point `storenvy-oauth-client.dev` to the app's project folder.
+5. Create .powenv environment variables locally or on heroku
+
+		# sample .powenv file
+		export STORENVY_APP_ID="234235436gfd"
+		export STORENVY_SECRET="32235trgfdbvc"		
+
+		# setup keys on heroku
+		heroku config:add STORENVY_APP_ID="234235436gfd" STORENVY_SECRET="32235trgfdbvc"
 
 6. Build something awesome!
